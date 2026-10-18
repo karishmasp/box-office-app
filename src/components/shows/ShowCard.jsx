@@ -10,10 +10,9 @@ const ShowCrad = ({ name, image, id, summary }) => {
         <img src={image} alt={name} />
       </div>
       <h1>{name}</h1>
-      <p>{id}</p>
       <p>{summaryStripped}</p>
       <div>
-        <Link to="/">Read more</Link>
+        <Link to={`/Show/${id}`}>Read more</Link>
         <button type="button">Star me</button>
       </div>
     </div>
